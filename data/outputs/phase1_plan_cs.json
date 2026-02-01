@@ -1,0 +1,58 @@
+{
+  "goal": "cs",
+  "assumptions": [],
+  "plan": [
+    {
+      "grade": 9,
+      "courses": [
+        "Freshman English (P)",
+        "Algebra II (P)",
+        "Biology (P)",
+        [
+          "Ethnic Studies (P)(sem)",
+          "Health Education (P)"
+        ],
+        "PE Course 1-Freshmen",
+        "Spanish I (P)"
+      ]
+    },
+    {
+      "grade": 10,
+      "courses": [
+        "Sophomore English (P)",
+        "Honors Pre-Calculus (HP)",
+        "Chemistry (P)",
+        "World History (P)",
+        "PE Course 2- Team Sports",
+        "AP Spanish Language and Culture (HP)"
+      ]
+    },
+    {
+      "grade": 11,
+      "courses": [
+        "Junior English (P)",
+        "AP Calculus AB (HP)",
+        "Physics (P)",
+        "U.S. History (P)",
+        "AP Spanish Literature and Culture (HP)",
+        "AP Computer Science (HP)"
+      ]
+    },
+    {
+      "grade": 12,
+      "courses": [
+        "AP English Literature & Comp (HP)",
+        "AP Calculus BC (HP)",
+        "AP Biology (HP)",
+        [
+          "Civics (P) (sem)",
+          "Economics (P) (sem)"
+        ],
+        "Computer Science Principles (P) (PLTW)",
+        "Intro to Engineering Design (P) (PLTW)"
+      ]
+    }
+  ],
+  "rationale": [],
+  "next_steps": []
+}
