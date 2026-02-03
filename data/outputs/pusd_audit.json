@@ -1,0 +1,32 @@
+{
+  "pusd_credit_totals": {
+    "english": 70.0,
+    "math": 40.0,
+    "science": 40.0,
+    "social_science": 35.0,
+    "pe": 20.0,
+    "health": 5.0,
+    "vpa_or_wl_or_cte": 20.0,
+    "electives": 10.0
+  },
+  "pusd_total_earned": 240.0,
+  "pusd_required_min_sum": 150,
+  "pusd_electives_earned": 90.0,
+  "pusd_subcomponents": {
+    "algebra_year_done": true,
+    "life_science_done": true,
+    "physical_science_done": true,
+    "ethnic_or_global_done": true,
+    "world_history_done": true,
+    "us_history_done": true,
+    "civics_done": true,
+    "econ_done": true,
+    "freshman_pe_done": true
+  },
+  "pusd_vpa_wl_cte_breakdown": {
+    "vpa": 0.0,
+    "wl": 0.0,
+    "cte": 20.0
+  },
+  "pusd_gaps": []
+}

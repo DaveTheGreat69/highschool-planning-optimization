@@ -13,29 +13,29 @@
           "Health Education (P)"
         ],
         "PE Course 1-Freshmen",
-        "Spanish I (P)"
+        "Computer Science Principles (P) (PLTW)"
       ]
     },
     {
       "grade": 10,
       "courses": [
-        "Sophomore English (P)",
+        "Honors Sophomore English (P)",
         "Honors Pre-Calculus (HP)",
         "Chemistry (P)",
         "World History (P)",
         "PE Course 2- Team Sports",
-        "AP Spanish Language and Culture (HP)"
+        "AP Computer Science (HP)"
       ]
     },
     {
       "grade": 11,
       "courses": [
-        "Junior English (P)",
+        "Honors Junior English (HP)",
         "AP Calculus AB (HP)",
         "Physics (P)",
         "U.S. History (P)",
-        "AP Spanish Literature and Culture (HP)",
-        "AP Computer Science (HP)"
+        "Advanced Computer Science for the Contemporary World (P)",
+        "Spanish III (P)"
       ]
     },
     {
@@ -48,8 +48,8 @@
           "Civics (P) (sem)",
           "Economics (P) (sem)"
         ],
-        "Computer Science Principles (P) (PLTW)",
-        "Intro to Engineering Design (P) (PLTW)"
+        "AP Spanish Language and Culture (HP)",
+        "Earth & Space (P)"
       ]
     }
   ],

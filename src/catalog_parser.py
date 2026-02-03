@@ -1,82 +1,127 @@
+from dataclasses import dataclass
+from typing import Dict, Set, Optional
 import pandas as pd
 import re
-from dataclasses import dataclass
-from typing import Dict, List, Optional, Set
 
 
-@dataclass(frozen=True)
+@dataclass
 class Course:
-    code: str
     title: str
-    subject_section: str
-    allowed_grades: Set[int]  # e.g., {9,10,11,12}
-    ag: str
-    notes: str
+    allowed_grades: Set[int]
+    ag_area: Optional[str] = None  # "A".."G" or None
+    subject_section: Optional[str] = None  # e.g., "ENGLISH"
 
 
-def _is_course_code(x) -> bool:
-    s = str(x).strip()
-    return bool(re.fullmatch(r"\d{5,}", s))
+SECTION_TOKENS = {
+    "ENGLISH",
+    "ENGLISH ELECTIVES",
+    "MATHEMATICS",
+    "HISTORY/SOCIAL SCIENCE",
+    "SCIENCE",
+    "VISUAL AND PERFORMING ARTS",
+    "VISUAL ARTS",
+    "PERFORMING ARTS",
+    "WORLD LANGUAGE",
+    "ADDITIONAL COURSES",
+    "PHYSICAL EDUCATION",
+    "CAREER AND TECHNICAL EDUCATION",
+}
 
 
-def _is_section_header(x) -> bool:
-    if x is None:
+def parse_ag_area(raw) -> Optional[str]:
+    if raw is None:
+        return None
+    s = str(raw).strip()
+    m = re.search(r"Area\s*([A-G])", s, flags=re.IGNORECASE)
+    return m.group(1).upper() if m else None
+
+
+def _norm_title(s: str) -> str:
+    return re.sub(r"\s+", " ", (s or "").strip())
+
+
+def _is_header_row(row0: str, row1: str) -> bool:
+    a = (row0 or "").strip()
+    b = (row1 or "").strip().lower()
+    if not a and not b:
+        return True
+    if a.strip().lower() == "course code":
+        return True
+    if b == "course title":
+        return True
+    if a.startswith("*") or "students will be placed" in a.lower():
+        return True
+    return False
+
+
+def _is_course_code(x: str) -> bool:
+    s = (x or "").strip()
+    if not s:
         return False
-    s = str(x).strip()
-    if not s or s.lower() in {"course code", "nan"}:
-        return False
-    # section headers in your CSV appear like "MATHEMATICS", "SOCIAL SCIENCE", etc.
-    return (s.upper() == s) and (not any(c.isdigit() for c in s)) and (len(s) <= 60)
+    if s.lower() == "pending":
+        return True
+    return s.isdigit()
 
 
-def _extract_grades(row) -> Set[int]:
-    out = set()
-    for col in ["Unnamed: 2", "Unnamed: 3", "Unnamed: 4", "Unnamed: 5"]:
-        if col in row and pd.notna(row[col]):
-            try:
-                g = int(float(row[col]))
-                if 6 <= g <= 12:
-                    out.add(g)
-            except Exception:
-                pass
-    return out
+def _allowed_grades_from_cols(c2, c3, c4, c5) -> Set[int]:
+    allowed = set()
+    cols = [c2, c3, c4, c5]
+    for idx, g in enumerate([9, 10, 11, 12]):
+        v = cols[idx]
+        if v is None:
+            continue
+        if str(v).strip() != "":
+            allowed.add(g)
+    return allowed
 
 
 def load_catalog(csv_path: str) -> Dict[str, Course]:
-    """
-    Parses the Foothill CSV into a dict keyed by exact course title.
-    """
-    df = pd.read_csv(csv_path)
-    subject = "UNKNOWN"
+    df = pd.read_csv(csv_path, header=None, dtype=str, keep_default_na=False)
+
     catalog: Dict[str, Course] = {}
+    current_section: Optional[str] = None
 
-    for _, row in df.iterrows():
-        first = row.get("ENGLISH")
+    for _, r in df.iterrows():
+        row0 = r.iloc[0] if len(r) > 0 else ""
+        row1 = r.iloc[1] if len(r) > 1 else ""
 
-        if _is_section_header(first):
-            subject = str(first).strip()
+        row0_clean = (row0 or "").strip().upper()
+
+        # Section header?
+        if row0_clean in SECTION_TOKENS:
+            current_section = row0_clean
             continue
 
-        if str(first).strip().lower() == "course code":
+        # Skip non-data rows
+        if _is_header_row(row0, row1):
             continue
 
-        if _is_course_code(first):
-            code = str(first).strip()
-            title = str(row.get("Unnamed: 1", "")).strip()
-            if not title or title.lower() == "nan":
-                continue
+        code = (row0 or "").strip()
+        if not _is_course_code(code):
+            continue
 
-            grades = _extract_grades(row)
-            ag = str(row.get("Unnamed: 6", "")).strip()
-            notes = str(row.get("Unnamed: 7", "")).strip()
+        title = _norm_title(row1)
+        if not title:
+            continue
 
-            catalog[title] = Course(
-                code=code,
-                title=title,
-                subject_section=subject,
-                allowed_grades=grades if grades else {9, 10, 11, 12},  # safe fallback
-                ag="" if ag.lower() == "nan" else ag,
-                notes="" if notes.lower() == "nan" else notes,
-            )
+        # Grades: columns 2-5 correspond to 9-12 markers
+        c2 = r.iloc[2] if len(r) > 2 else ""
+        c3 = r.iloc[3] if len(r) > 3 else ""
+        c4 = r.iloc[4] if len(r) > 4 else ""
+        c5 = r.iloc[5] if len(r) > 5 else ""
+        allowed_grades = _allowed_grades_from_cols(c2, c3, c4, c5)
+        if not allowed_grades:
+            continue
+
+        # A-G is column 6
+        ag_raw = r.iloc[6] if len(r) > 6 else ""
+        ag_area = parse_ag_area(ag_raw)
+
+        catalog[title] = Course(
+            title=title,
+            allowed_grades=allowed_grades,
+            ag_area=ag_area,
+            subject_section=current_section
+        )
 
     return catalog

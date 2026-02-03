@@ -1,4 +1,4 @@
-from math_pathway import find_course_by_keywords
+from src.math_pathway import find_course_by_keywords
 
 SCI_TRACK = {
     "standard_stem": ["biology", "chemistry", "physics", "ap_science"],

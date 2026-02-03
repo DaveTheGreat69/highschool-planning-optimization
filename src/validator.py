@@ -1,5 +1,5 @@
 from typing import Any, Dict, List
-from catalog_parser import Course
+from src.catalog_parser import Course
 
 
 def validate_plan_offered_by_grade(plan_json: Dict[str, Any], catalog: Dict[str, Course]) -> List[str]:
@@ -24,4 +24,17 @@ def validate_plan_offered_by_grade(plan_json: Dict[str, Any], catalog: Dict[str,
                     if grade not in catalog[t].allowed_grades:
                         errors.append(f"Grade {grade}: course '{t}' not offered in grade {grade}")
 
+    return errors
+def validate_no_backtracking(plan_json, completed_courses):
+    errors = []
+    completed_text = " | ".join([str(c).lower() for c in completed_courses])
+
+    if "spanish ii" in completed_text:
+        forbidden = {"Spanish I (P)", "Spanish II (P)"}
+        for year in plan_json["plan"]:
+            for slot in year["courses"]:
+                titles = slot if isinstance(slot, list) else [slot]
+                for t in titles:
+                    if t in forbidden:
+                        errors.append(f"Spanish backtracking: found '{t}' in grade {year['grade']} but Spanish II is completed.")
     return errors

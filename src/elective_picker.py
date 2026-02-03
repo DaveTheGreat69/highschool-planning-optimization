@@ -1,6 +1,6 @@
 from typing import Dict, List, Set, Optional
-from catalog_parser import Course
-from utils import contains_any
+from src.catalog_parser import Course
+from src.utils import contains_any
 
 
 def pick_course_by_keywords(

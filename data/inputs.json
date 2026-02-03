@@ -1,13 +1,66 @@
 {
   "goal": "cs",
-  "starting_math": "honors_algebra2",
   "completed_courses": [
     "Spanish II (P)",
     "Honors Geometry (P)"
   ],
+  "math": {
+  "highest_completed": "Honors Geometry (P)",
+  "prefer_honors": true
+  },
   "prefer_spanish": true,
   "pe_waiver": false,
   "rigor": "high",
-  "starting_grade": 9
+  "starting_grade": 9,
+  "world_language": {
+    "language": "spanish",
+    "continue": true,
+    "target_years": 2
+  },
+  "vpa": {
+    "target_years": 1
+  },
+  "rigor_preferences": {
+    "english": "honors_ok",
+    "history": "honors_ok",
+    "science": "honors_ok",
+    "math": "maximize",
+    "cs": "maximize"
+    },
+  "max_ap_per_year": { "9": 0, "10": 1, "11": 2, "12": 3 },
+  "grades": {
+    "Freshman English (P)": "A",
+    "Algebra II (P)": "A",
+    "Biology (P)": "A-",
+    "World History (P)": "A",
+    "AP Computer Science (HP)": "A-"
+  },
+  "default_grade": "A-",
+  "gpa": {
+  "default_letter": "A"
+  },
+  "grade_assumptions": {
+  "P": "A",
+  "HP": "A-",
+  "AP": "B+"
+  },
+  "uc_gpa": {
+  "report_windows": ["9-11", "10-11"],
+  "include_grade9_report": true,
+  "weighted_cap_semesters": 8,
+  "grade10_weighted_course_cap": 2,
+  "honors_overrides": []
+  },
+  "overrides": {
+  "include_grade9_in_hs_gpa": true,
+  "AP Calculus AB (HP)": "A",
+  "Physics (P)": "A-",
+  "AP English Literature & Comp (HP)": "B+"
+  },
+  "prefer_honors": {
+    "english": true,
+    "history": true,
+    "science": true,
+    "math": true
+  }
 }
-
