@@ -1,0 +1,246 @@
+{
+  "hs_unweighted_gpa": 4.0,
+  "hs_weighted_gpa": 4.333,
+  "courses_count_equiv": 24.0,
+  "assumptions": [
+    "PUSD profile scale: A(+/-)=4, B(+/-)=3, C(+/-)=2, D(+/-)=1, F=0.",
+    "Weighted courses: AP and courses designated (HP) get +1 for A/B/C (A=5, B=4, C=3).",
+    "Only plan courses (grades 9\u201312) are included; completed middle school HS-level courses are excluded from GPA."
+  ],
+  "breakdown": [
+    {
+      "grade": 9,
+      "course": "Freshman English (P)",
+      "letter": "A",
+      "weighted_course": false,
+      "points_unweighted": 4.0,
+      "points_weighted": 4.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 9,
+      "course": "Algebra II (P)",
+      "letter": "A",
+      "weighted_course": false,
+      "points_unweighted": 4.0,
+      "points_weighted": 4.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 9,
+      "course": "Biology (P)",
+      "letter": "A",
+      "weighted_course": false,
+      "points_unweighted": 4.0,
+      "points_weighted": 4.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 9,
+      "course": "Ethnic Studies (P)(sem)",
+      "letter": "A",
+      "weighted_course": false,
+      "points_unweighted": 4.0,
+      "points_weighted": 4.0,
+      "course_weight": 0.5
+    },
+    {
+      "grade": 9,
+      "course": "Health Education (P)",
+      "letter": "A",
+      "weighted_course": false,
+      "points_unweighted": 4.0,
+      "points_weighted": 4.0,
+      "course_weight": 0.5
+    },
+    {
+      "grade": 9,
+      "course": "PE Course 1-Freshmen",
+      "letter": "A",
+      "weighted_course": false,
+      "points_unweighted": 4.0,
+      "points_weighted": 4.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 9,
+      "course": "Computer Science Principles (P) (PLTW)",
+      "letter": "A",
+      "weighted_course": false,
+      "points_unweighted": 4.0,
+      "points_weighted": 4.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 10,
+      "course": "Honors Sophomore English (P)",
+      "letter": "A",
+      "weighted_course": false,
+      "points_unweighted": 4.0,
+      "points_weighted": 4.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 10,
+      "course": "Honors Pre-Calculus (HP)",
+      "letter": "A",
+      "weighted_course": true,
+      "points_unweighted": 4.0,
+      "points_weighted": 5.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 10,
+      "course": "Chemistry (P)",
+      "letter": "A",
+      "weighted_course": false,
+      "points_unweighted": 4.0,
+      "points_weighted": 4.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 10,
+      "course": "World History (P)",
+      "letter": "A",
+      "weighted_course": false,
+      "points_unweighted": 4.0,
+      "points_weighted": 4.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 10,
+      "course": "PE Course 2- Team Sports",
+      "letter": "A",
+      "weighted_course": false,
+      "points_unweighted": 4.0,
+      "points_weighted": 4.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 10,
+      "course": "AP Computer Science (HP)",
+      "letter": "A",
+      "weighted_course": true,
+      "points_unweighted": 4.0,
+      "points_weighted": 5.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 11,
+      "course": "Honors Junior English (HP)",
+      "letter": "A",
+      "weighted_course": true,
+      "points_unweighted": 4.0,
+      "points_weighted": 5.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 11,
+      "course": "AP Calculus AB (HP)",
+      "letter": "A",
+      "weighted_course": true,
+      "points_unweighted": 4.0,
+      "points_weighted": 5.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 11,
+      "course": "Physics (P)",
+      "letter": "A",
+      "weighted_course": false,
+      "points_unweighted": 4.0,
+      "points_weighted": 4.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 11,
+      "course": "U.S. History (P)",
+      "letter": "A",
+      "weighted_course": false,
+      "points_unweighted": 4.0,
+      "points_weighted": 4.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 11,
+      "course": "Advanced Computer Science for the Contemporary World (P)",
+      "letter": "A",
+      "weighted_course": false,
+      "points_unweighted": 4.0,
+      "points_weighted": 4.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 11,
+      "course": "Spanish III (P)",
+      "letter": "A",
+      "weighted_course": false,
+      "points_unweighted": 4.0,
+      "points_weighted": 4.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 12,
+      "course": "AP English Literature & Comp (HP)",
+      "letter": "A",
+      "weighted_course": true,
+      "points_unweighted": 4.0,
+      "points_weighted": 5.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 12,
+      "course": "AP Calculus BC (HP)",
+      "letter": "A",
+      "weighted_course": true,
+      "points_unweighted": 4.0,
+      "points_weighted": 5.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 12,
+      "course": "AP Biology (HP)",
+      "letter": "A",
+      "weighted_course": true,
+      "points_unweighted": 4.0,
+      "points_weighted": 5.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 12,
+      "course": "Civics (P) (sem)",
+      "letter": "A",
+      "weighted_course": false,
+      "points_unweighted": 4.0,
+      "points_weighted": 4.0,
+      "course_weight": 0.5
+    },
+    {
+      "grade": 12,
+      "course": "Economics (P) (sem)",
+      "letter": "A",
+      "weighted_course": false,
+      "points_unweighted": 4.0,
+      "points_weighted": 4.0,
+      "course_weight": 0.5
+    },
+    {
+      "grade": 12,
+      "course": "AP Spanish Language and Culture (HP)",
+      "letter": "A",
+      "weighted_course": true,
+      "points_unweighted": 4.0,
+      "points_weighted": 5.0,
+      "course_weight": 1.0
+    },
+    {
+      "grade": 12,
+      "course": "Earth & Space (P)",
+      "letter": "A",
+      "weighted_course": false,
+      "points_unweighted": 4.0,
+      "points_weighted": 4.0,
+      "course_weight": 1.0
+    }
+  ]
+}

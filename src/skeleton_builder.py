@@ -1,5 +1,5 @@
 from typing import Dict, Any, List
-from rules_pusd import CORE_SLOTS
+from src.rules_pusd import CORE_SLOTS
 
 
 def build_empty_plan(goal: str) -> Dict[str, Any]:

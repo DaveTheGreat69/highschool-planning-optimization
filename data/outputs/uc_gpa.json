@@ -1,0 +1,406 @@
+{
+  "unweighted_9_11": {
+    "gpa": 4.0,
+    "course_units": 16.0,
+    "included": [
+      {
+        "grade": 9,
+        "course": "Freshman English (P)",
+        "units": 1.0,
+        "ag": "b",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 9,
+        "course": "Algebra II (P)",
+        "units": 1.0,
+        "ag": "c",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 9,
+        "course": "Biology (P)",
+        "units": 1.0,
+        "ag": "d",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 9,
+        "course": "Ethnic Studies (P)(sem)",
+        "units": 0.5,
+        "ag": "a",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 9,
+        "course": "Health Education (P)",
+        "units": 0.5,
+        "ag": "g",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 9,
+        "course": "Computer Science Principles (P) (PLTW)",
+        "units": 1.0,
+        "ag": "d",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 10,
+        "course": "Honors Sophomore English (P)",
+        "units": 1.0,
+        "ag": "b",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 10,
+        "course": "Honors Pre-Calculus (HP)",
+        "units": 1.0,
+        "ag": "c",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 10,
+        "course": "Chemistry (P)",
+        "units": 1.0,
+        "ag": "d",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 10,
+        "course": "World History (P)",
+        "units": 1.0,
+        "ag": "a",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 10,
+        "course": "AP Computer Science (HP)",
+        "units": 1.0,
+        "ag": "c",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 11,
+        "course": "Honors Junior English (HP)",
+        "units": 1.0,
+        "ag": "b",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 11,
+        "course": "AP Calculus AB (HP)",
+        "units": 1.0,
+        "ag": "c",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 11,
+        "course": "Physics (P)",
+        "units": 1.0,
+        "ag": "d",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 11,
+        "course": "U.S. History (P)",
+        "units": 1.0,
+        "ag": "a",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 11,
+        "course": "Advanced Computer Science for the Contemporary World (P)",
+        "units": 1.0,
+        "ag": "g",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 11,
+        "course": "Spanish III (P)",
+        "units": 1.0,
+        "ag": "e",
+        "letter": "A",
+        "points": 4.0
+      }
+    ],
+    "excluded": [
+      {
+        "grade": 9,
+        "course": "PE Course 1-Freshmen",
+        "reason": "not a-g"
+      },
+      {
+        "grade": 10,
+        "course": "PE Course 2- Team Sports",
+        "reason": "not a-g"
+      }
+    ]
+  },
+  "unweighted_10_11": {
+    "gpa": 4.0,
+    "course_units": 11.0,
+    "included": [
+      {
+        "grade": 10,
+        "course": "Honors Sophomore English (P)",
+        "units": 1.0,
+        "ag": "b",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 10,
+        "course": "Honors Pre-Calculus (HP)",
+        "units": 1.0,
+        "ag": "c",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 10,
+        "course": "Chemistry (P)",
+        "units": 1.0,
+        "ag": "d",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 10,
+        "course": "World History (P)",
+        "units": 1.0,
+        "ag": "a",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 10,
+        "course": "AP Computer Science (HP)",
+        "units": 1.0,
+        "ag": "c",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 11,
+        "course": "Honors Junior English (HP)",
+        "units": 1.0,
+        "ag": "b",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 11,
+        "course": "AP Calculus AB (HP)",
+        "units": 1.0,
+        "ag": "c",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 11,
+        "course": "Physics (P)",
+        "units": 1.0,
+        "ag": "d",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 11,
+        "course": "U.S. History (P)",
+        "units": 1.0,
+        "ag": "a",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 11,
+        "course": "Advanced Computer Science for the Contemporary World (P)",
+        "units": 1.0,
+        "ag": "g",
+        "letter": "A",
+        "points": 4.0
+      },
+      {
+        "grade": 11,
+        "course": "Spanish III (P)",
+        "units": 1.0,
+        "ag": "e",
+        "letter": "A",
+        "points": 4.0
+      }
+    ],
+    "excluded": [
+      {
+        "grade": 10,
+        "course": "PE Course 2- Team Sports",
+        "reason": "not a-g"
+      }
+    ]
+  },
+  "weighted_capped_10_11": {
+    "weighted_capped_gpa": 4.364,
+    "base_unweighted_gpa": 4.0,
+    "bonus_points_total": 4.0,
+    "bonus_units_applied": 4.0,
+    "bonus_courses_applied_count": 4,
+    "course_units": 11.0,
+    "included": [
+      {
+        "grade": 10,
+        "course": "Honors Sophomore English (P)",
+        "units": 1.0,
+        "ag": "b",
+        "letter": "A",
+        "base_points": 4.0,
+        "honors_eligible": true,
+        "bonus_units_added": 1.0
+      },
+      {
+        "grade": 10,
+        "course": "Honors Pre-Calculus (HP)",
+        "units": 1.0,
+        "ag": "c",
+        "letter": "A",
+        "base_points": 4.0,
+        "honors_eligible": true,
+        "bonus_units_added": 1.0
+      },
+      {
+        "grade": 10,
+        "course": "Chemistry (P)",
+        "units": 1.0,
+        "ag": "d",
+        "letter": "A",
+        "base_points": 4.0,
+        "honors_eligible": false,
+        "bonus_units_added": 0.0
+      },
+      {
+        "grade": 10,
+        "course": "World History (P)",
+        "units": 1.0,
+        "ag": "a",
+        "letter": "A",
+        "base_points": 4.0,
+        "honors_eligible": false,
+        "bonus_units_added": 0.0
+      },
+      {
+        "grade": 10,
+        "course": "AP Computer Science (HP)",
+        "units": 1.0,
+        "ag": "c",
+        "letter": "A",
+        "base_points": 4.0,
+        "honors_eligible": true,
+        "bonus_units_added": 1.0
+      },
+      {
+        "grade": 11,
+        "course": "Honors Junior English (HP)",
+        "units": 1.0,
+        "ag": "b",
+        "letter": "A",
+        "base_points": 4.0,
+        "honors_eligible": true,
+        "bonus_units_added": 1.0
+      },
+      {
+        "grade": 11,
+        "course": "AP Calculus AB (HP)",
+        "units": 1.0,
+        "ag": "c",
+        "letter": "A",
+        "base_points": 4.0,
+        "honors_eligible": true,
+        "bonus_units_added": 0.0
+      },
+      {
+        "grade": 11,
+        "course": "Physics (P)",
+        "units": 1.0,
+        "ag": "d",
+        "letter": "A",
+        "base_points": 4.0,
+        "honors_eligible": false,
+        "bonus_units_added": 0.0
+      },
+      {
+        "grade": 11,
+        "course": "U.S. History (P)",
+        "units": 1.0,
+        "ag": "a",
+        "letter": "A",
+        "base_points": 4.0,
+        "honors_eligible": false,
+        "bonus_units_added": 0.0
+      },
+      {
+        "grade": 11,
+        "course": "Advanced Computer Science for the Contemporary World (P)",
+        "units": 1.0,
+        "ag": "g",
+        "letter": "A",
+        "base_points": 4.0,
+        "honors_eligible": false,
+        "bonus_units_added": 0.0
+      },
+      {
+        "grade": 11,
+        "course": "Spanish III (P)",
+        "units": 1.0,
+        "ag": "e",
+        "letter": "A",
+        "base_points": 4.0,
+        "honors_eligible": false,
+        "bonus_units_added": 0.0
+      }
+    ],
+    "excluded": [
+      {
+        "grade": 10,
+        "course": "PE Course 2- Team Sports",
+        "reason": "not a-g"
+      }
+    ],
+    "bonus_courses_applied": [
+      {
+        "grade": 10,
+        "course": "Honors Sophomore English (P)",
+        "bonus_units": 1.0
+      },
+      {
+        "grade": 10,
+        "course": "Honors Pre-Calculus (HP)",
+        "bonus_units": 1.0
+      },
+      {
+        "grade": 10,
+        "course": "AP Computer Science (HP)",
+        "bonus_units": 1.0
+      },
+      {
+        "grade": 11,
+        "course": "Honors Junior English (HP)",
+        "bonus_units": 1.0
+      }
+    ]
+  }
+}
